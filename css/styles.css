@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0 auto;
+    max-width: 1024px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: .05em;
+    background-color: #f7f7f7;
+    padding: 25px;
+  }
+
+  header {
+     margin: 0px 0px 50px;
+  }
+
+  main {
+    margin: 0px -22px;
+    padding: 1px 65px;
+}
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1, h2, .top-nav {
+    text-align: center;
+  }
+
+  h1 a, .top-nav a {
+    color: #000;
+  }
+
+  h2 {
+    margin-top: auto;
+  }
+
+  .main {
+    background-color: #fff;
+  }
+
+  .top-nav{
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .top-nav li {
+    background-color: white;
+    padding: 10px 0;
+    margin: 5px auto;
+    border-radius: 50px;
+  }
+
+  img {
+    height: auto;
+    margin: auto;
+    max-width: 75vw;
+  }
+
+  .headcontainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.headcontainer img {
+    padding: 50px 50px;
+}
+
+.portfolio {
+    margin-top: 100px;
+}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main h2 {
+    padding: 50px 50px;
+  }
+
+  .col {
+    margin: 10px;
+    min-height: 250px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+  }
+
+  
+
+  /* Media */
+
+  @media (min-width: 768px) { 
+    .top-nav {
+        margin-top: 0;
+    }
+
+    .top-nav li {
+        display: inline-flex;
+        width: auto;
+        margin-right: 15px;
+        background-color: transparent;
+    }
+
+    .top-nav li:last-child {
+        margin-right: 0;
+      }
+
+      .top-nav a {
+        color: #000;
+      }
+
+      nav p {
+        order: -1;
+      }
+
+      .headcontainer {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex-basis: calc(50% - 20px);
+      }
+    }
+
+  @media (min-width: 1024px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    .top-nav, .top-nav li {
+    width: initial;
+    margin-bottom: 0;
+  }
+
+  .headcontainer {
+    margin-top: 100px;
+  }
+
+  .col {
+    flex-basis: calc(33.333% - 20px);
+  }
+}
