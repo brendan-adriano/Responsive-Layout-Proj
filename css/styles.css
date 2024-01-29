@@ -18,6 +18,12 @@
      margin: 0px 0px 50px;
   }
 
+  nav {
+    background-color: #78866b;
+    border-radius: 15px;
+    padding: 15px 15px;
+  }
+
   main {
     margin: 0px -22px;
     padding: 1px 65px;
@@ -30,6 +36,7 @@
 
   a {
     text-decoration: none;
+    color: mediumpurple;
   }
 
   h1, h2, .top-nav {
@@ -42,6 +49,22 @@
 
   h2 {
     margin-top: auto;
+  }
+
+  img {
+    height: auto;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    border-top: 1px solid lightgray;
   }
 
   .main {
@@ -60,20 +83,19 @@
     border-radius: 50px;
   }
 
-  img {
-    height: auto;
-    margin: auto;
-    max-width: 75vw;
-  }
-
   .headcontainer {
     display: flex;
     flex-direction: column;
     flex: 1;
+    font-size: large;
 }
 
 .headcontainer img {
     padding: 50px 50px;
+}
+
+.headcontainer p {
+    margin: auto;
 }
 
 .portfolio {
@@ -97,7 +119,32 @@
     padding-top: 5px;
   }
 
-  
+  .skill-list {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  #contact {
+    text-align: center;
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact p {
+    margin: 15px -50px 5px;
+}
+
+#skills {
+    text-align: center;
+    margin: 50px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bot-nav {
+    display: none;
+}
 
   /* Media */
 
@@ -106,7 +153,7 @@
         margin-top: 0;
     }
 
-    .top-nav li {
+    .top-nav li, .bot-nav li {
         display: inline-flex;
         width: auto;
         margin-right: 15px;
@@ -133,10 +180,30 @@
     .container {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .col {
         flex-basis: calc(50% - 20px);
+      }
+
+    .bot-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    .bot-nav li:last-child {
+        margin-right: 0;
+      }
+
+    .to-top {
+        display: none;
+    }
+
+    .full {
+        display: inline-block;
+        margin-left: 20px;
       }
     }
 
