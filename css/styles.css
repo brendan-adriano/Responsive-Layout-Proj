@@ -24,11 +24,6 @@
     padding: 15px 15px;
   }
 
-  main {
-    margin: 0px -22px;
-    padding: 1px 65px;
-}
-
   ul {
     list-style: none;
     padding-left: 0;
@@ -62,7 +57,6 @@
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
-    padding: 0 20px;
     height: 100px;
     border-top: 1px solid lightgray;
   }
@@ -107,10 +101,6 @@
     flex-direction: column;
   }
 
-  main h2 {
-    padding: 50px 50px;
-  }
-
   .col {
     margin: 10px;
     min-height: 250px;
@@ -126,13 +116,8 @@
 
   #contact {
     text-align: center;
-    margin: 50px 50px;
     display: flex;
     flex-direction: column;
-}
-
-#contact p {
-    margin: 15px -50px 5px;
 }
 
 #skills {
@@ -149,6 +134,20 @@
   /* Media */
 
   @media (min-width: 768px) { 
+
+    main {
+      margin: 0px -22px;
+      padding: 1px 65px;
+  }
+
+  main h2 {
+    padding: 50px 50px;
+  }
+
+  footer {
+    padding: 0 20px;
+  }
+
     .top-nav {
         margin-top: 0;
     }
@@ -206,6 +205,15 @@
         margin-left: 20px;
       }
     }
+
+    #contact {
+      margin: 50px 50px;
+    }
+
+    #contact p {
+      margin: 15px -50px 5px;
+  }
+  
 
   @media (min-width: 1024px) {
     nav {
